@@ -8,5 +8,5 @@ How to run?
 2. script.js : Change <b>YOUR_API_KEY</b> to your API Key using <a href="http://www.last.fm/api"> Last.fm API</a>
 
 3. In chrome, go to:   
-Extensions > Manage Extensions > Enable developer tools > Load Unpacked
+Extensions > Manage Extensions > Enable developer tools > Load Unpacked<br/>
 Select and unpack the cloned repository.
