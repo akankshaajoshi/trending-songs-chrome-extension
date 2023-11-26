@@ -1,7 +1,7 @@
 let result;
 console.log("script running");
 async function fetchData() {
-  const url = `https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=YOUR_API_KEY&format=json`;
+  const url = `https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=110d8d38185d8cd63f9ad706f1970941&format=json`;
   const options = {
     method: "GET",
   };
@@ -12,6 +12,7 @@ async function fetchData() {
     console.log(result.tracks);
     result.tracks.track.map((track) => {
       const newTrack = document.createElement("li");
+      const newDiv = document.createElement("div");
 
       const trackName = document.createTextNode(" " + track.name + " ");
 
@@ -23,8 +24,9 @@ async function fetchData() {
       trackUrl.setAttribute("target", "_blank");
       trackUrl.innerHTML = "Link";
 
-      newTrack.appendChild(trackImage);
-      newTrack.appendChild(trackName);
+      newDiv.appendChild(trackImage);
+      newDiv.appendChild(trackName);
+      newTrack.appendChild(newDiv);
       newTrack.appendChild(trackUrl);
 
       document.getElementById("track").appendChild(newTrack);
