@@ -9,5 +9,4 @@ How to run?
 
 3. In chrome, go to:   
 Extensions > Manage Extensions > Enable developer tools > Load Unpacked
-
 Select and unpack the cloned repository.
