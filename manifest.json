@@ -1,0 +1,11 @@
+{
+  "name": "Trending songs - Pop",
+  "version": "1.0.0",
+  "description": "Dive into the top 50 pop music favourites around the world.",
+  "manifest_version": 3,
+  "author": "Akanksha Joshi",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Top 50 trending pop songs of the day."
+  }
+}
